@@ -1,8 +1,8 @@
 # Generate Identicons as SVG
 
-<img src="./sample.svg" style="width: 50px;" alt="Sample Identicon" />
+This project generates Identicons as they are commonly used e.g. on GitHub:
 
-This project generates Identicons as they are commonly used e.g. on GitHub. 
+![sample.svg](sample.svg)
 
 ## Usage
 
