@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+const image_width = 400
+
 if (process.argv.length <= 2) {
     console.log("Usage: node ./start.js <name-to-be-identiconified>")
     console.log('Please provide at least a name which should be identiconified. Exiting.')
@@ -12,7 +14,7 @@ console.log('Generating Identicon...')
 
 const jdenticon = require("jdenticon"),
     fs = require("fs"),
-    svg = jdenticon.toSvg(name, 400),
+    svg = jdenticon.toSvg(name, image_width),
     fileOnDisk = "./" + name + ".svg"
 
 fs.writeFileSync(fileOnDisk, svg)
